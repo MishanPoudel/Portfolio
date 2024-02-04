@@ -1,4 +1,5 @@
 import Clock from "./components/Clock";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -6,9 +7,11 @@ export default function Home() {
       <main className="mx-4 md:mx-8 lg:mx-64 lg:mt-10 mt-9">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:h-[38vh] lg:w-[35.5vw] flex md:h-[42vh] shadow-inset rounded-3xl mb-4 lg:mb-0 relative">
-            <img
+            <Image
               src="https://source.unsplash.com/500x600/?cat"
               alt="Random Cat Image"
+              height={500}
+              width={600}
               className="lg:h-[30vh] md:h-[35vh] mt-10 ml-7 rounded-tl-3xl rounded-br-3xl z-0 object-cover"
             />
             <div className="flex flex-col justify-center ml-7">
@@ -58,10 +61,12 @@ export default function Home() {
             <div className="flex flex-col grow lg:flex-row lg:mt-2">
               <div className="shadow-inset rounded-3xl mb-4 lg:mb-0 lg:w-1/2 :h-[40vh]">
                 <div className="flex justify-center items-center lg:h-2/3">
-                  <img
+                  <Image
                     src="/images/png/WhiteLogo.png"
                     alt="logo"
                     className="p-12 md:h-52"
+                    height={150}
+                    width={350}
                   />
                 </div>
                 <div className="flex justify-between items-center md:mb-5">
