@@ -579,7 +579,7 @@ export default function Home() {
           <div className="shadow-inset rounded-3xl lg:w-[16vw] lg:mb-0">
             <div className="flex justify-between mt-28 items-center">
               <div className="ml-6 text-3xl flex flex-col justify-end h-full pb-5">
-                <div>Let's</div>
+                <div>Let&apos;s</div>
                 <div>Work</div>
                 <div>Together</div>
               </div>
