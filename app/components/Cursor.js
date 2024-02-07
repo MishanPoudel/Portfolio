@@ -29,7 +29,7 @@ export default function Cursor() {
       window.removeEventListener("mousemove", manageMouseMove);
     };
   }, [mouse.x, mouse.y, cursorSize]);
-
+  
   return (
     <>
       <motion.div
@@ -37,13 +37,14 @@ export default function Cursor() {
           zIndex: 1000,
           left: smoothMouse.x,
           top: smoothMouse.y,
-          background: "#f3f4f6",
+          background: "currentColor",
           height: cursorSize,
           width: cursorSize,
           position: 'fixed',
           borderRadius: "50%",
           pointerEvents: "none"
         }}
+        className='text-primary'
       >
       </motion.div>
     </>

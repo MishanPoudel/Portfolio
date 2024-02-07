@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="mx-4 md:mx-8 lg:mx-64 lg:mt-10 mt-9">
+      <main className="mx-4 md:mx-8 lg:mx-64 lg:mt-10 mt-9 overflow-hidden text-primary">
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:h-[38vh] lg:w-[35.5vw] flex md:h-[42vh] shadow-inset rounded-3xl mb-4 lg:mb-0 relative">
+          <div className="lg:h-[38vh] lg:w-[35.5vw] flex md:h-[42vh] sm: shadow-inset rounded-3xl mb-4 lg:mb-0 relative">
             <Image
               src="https://source.unsplash.com/500x600/?cat"
               alt="Random Cat Image"
@@ -25,7 +25,7 @@ export default function Home() {
               <div className="absolute right-10 bottom-7">
                 <svg
                   className="h-10 w-10"
-                  fill="white"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   shape-rendering="geometricPrecision"
                   text-rendering="geometricPrecision"
@@ -62,7 +62,7 @@ export default function Home() {
               <div className="shadow-inset rounded-3xl mb-4 lg:mb-0 lg:w-1/2 :h-[40vh]">
                 <div className="flex justify-center items-center lg:h-2/3">
                   <Image
-                    src="/images/png/WhiteLogo.png"
+                    src="/images/WhiteLogo.png"
                     alt="logo"
                     className="p-12 md:h-52"
                     height={150}
@@ -80,7 +80,7 @@ export default function Home() {
                     <div className="mr-7 mt-5">
                       <svg
                         className="h-10 w-10"
-                        fill="white"
+                        fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
                         shape-rendering="geometricPrecision"
                         text-rendering="geometricPrecision"
@@ -113,7 +113,7 @@ export default function Home() {
                     <div className="mr-7 mt-5">
                       <svg
                         className="h-10 w-10"
-                        fill="white"
+                        fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg"
                         shape-rendering="geometricPrecision"
                         text-rendering="geometricPrecision"
@@ -185,9 +185,9 @@ export default function Home() {
                           r="50.167"
                           cy="237.628"
                           cx="269.529"
-                          fill="#FFFFFF"
+                          fill="currentColor"
                         />
-                        <g stroke="#FFFFFF" stroke-width="24">
+                        <g stroke="currentColor" stroke-width="24">
                           <path d="M269.53 135.628c67.356 0 129.928 9.665 177.107 25.907 56.844 19.57 91.794 49.233 91.794 76.093 0 27.99-37.04 59.503-98.083 79.728-46.15 15.29-106.88 23.272-170.818 23.272-65.554 0-127.63-7.492-174.3-23.44-59.046-20.182-94.61-52.103-94.61-79.56 0-26.642 33.37-56.076 89.415-75.616 47.355-16.51 111.472-26.384 179.486-26.384z" />
                           <path d="M180.736 186.922c33.65-58.348 73.28-107.724 110.92-140.48C337.006 6.976 380.163-8.48 403.43 4.937c24.248 13.983 33.042 61.814 20.067 124.796-9.8 47.618-33.234 104.212-65.176 159.6-32.75 56.788-70.25 106.82-107.377 139.272-46.98 41.068-92.4 55.93-116.185 42.213-23.08-13.3-31.906-56.92-20.834-115.233 9.355-49.27 32.832-109.745 66.8-168.664z" />
                           <path d="M180.82 289.482C147.075 231.2 124.1 172.195 114.51 123.227c-11.544-59-3.382-104.11 19.864-117.566 24.224-14.024 70.055 2.244 118.14 44.94 36.356 32.28 73.688 80.837 105.723 136.173 32.844 56.733 57.46 114.21 67.036 162.582 12.117 61.213 2.31 107.984-21.453 121.74-23.057 13.348-65.25-.784-110.24-39.5-38.013-32.71-78.682-83.253-112.76-142.115z" />
@@ -311,9 +311,9 @@ export default function Home() {
                           r="50.167"
                           cy="237.628"
                           cx="269.529"
-                          fill="#FFFFFF"
+                          fill="currentColor"
                         />
-                        <g stroke="#FFFFFF" stroke-width="24">
+                        <g stroke="currentColor" stroke-width="24">
                           <path d="M269.53 135.628c67.356 0 129.928 9.665 177.107 25.907 56.844 19.57 91.794 49.233 91.794 76.093 0 27.99-37.04 59.503-98.083 79.728-46.15 15.29-106.88 23.272-170.818 23.272-65.554 0-127.63-7.492-174.3-23.44-59.046-20.182-94.61-52.103-94.61-79.56 0-26.642 33.37-56.076 89.415-75.616 47.355-16.51 111.472-26.384 179.486-26.384z" />
                           <path d="M180.736 186.922c33.65-58.348 73.28-107.724 110.92-140.48C337.006 6.976 380.163-8.48 403.43 4.937c24.248 13.983 33.042 61.814 20.067 124.796-9.8 47.618-33.234 104.212-65.176 159.6-32.75 56.788-70.25 106.82-107.377 139.272-46.98 41.068-92.4 55.93-116.185 42.213-23.08-13.3-31.906-56.92-20.834-115.233 9.355-49.27 32.832-109.745 66.8-168.664z" />
                           <path d="M180.82 289.482C147.075 231.2 124.1 172.195 114.51 123.227c-11.544-59-3.382-104.11 19.864-117.566 24.224-14.024 70.055 2.244 118.14 44.94 36.356 32.28 73.688 80.837 105.723 136.173 32.844 56.733 57.46 114.21 67.036 162.582 12.117 61.213 2.31 107.984-21.453 121.74-23.057 13.348-65.25-.784-110.24-39.5-38.013-32.71-78.682-83.253-112.76-142.115z" />
@@ -404,7 +404,7 @@ export default function Home() {
                 <div className="mr-7 ">
                   <svg
                     className="h-10 w-10"
-                    fill="white"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                     shape-rendering="geometricPrecision"
                     text-rendering="geometricPrecision"
@@ -445,8 +445,10 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row h-64">
           <div className="shadow-inset rounded-3xl mb-4 lg:mb-0 lg:w-[17vw]">
             <div className="flex justify-center items-center h-2/3">
-              <div
-                src="/images/png/WhiteLogo.png"
+              <Image
+                height={500}
+                width={500}
+                src="/images/WhiteLogo.png"
                 alt="logo"
                 className="p-12"
               />
@@ -460,7 +462,7 @@ export default function Home() {
                 <div className="mr-7 ">
                   <svg
                     className="h-10 w-10"
-                    fill="white"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                     shape-rendering="geometricPrecision"
                     text-rendering="geometricPrecision"
@@ -558,7 +560,7 @@ export default function Home() {
                 <div className="mr-7 ">
                   <svg
                     className="h-10 w-10"
-                    fill="white"
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                     shape-rendering="geometricPrecision"
                     text-rendering="geometricPrecision"
@@ -586,7 +588,7 @@ export default function Home() {
               <div className="mr-7 mt-5">
                 <svg
                   className="h-10 w-10"
-                  fill="white"
+                  fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   shape-rendering="geometricPrecision"
                   text-rendering="geometricPrecision"
@@ -604,7 +606,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-24 text-3xl font-bold text-center">
+        <div className="sm:mt-[475px] md:sm:mt-[575px]">
+        <div className="lg:mt-24 text-3xl font-bold text-center">
           Mishan Poudel
         </div>
         <div className="flex justify-center">
@@ -617,6 +620,7 @@ export default function Home() {
         </div>
         <div className="text-center m-5 lg:mb-32">
           Created by <span className="text-blue-400">Mishan Poudel</span>
+        </div>
         </div>
       </main>
     </>
