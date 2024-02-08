@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 
-export default function Cursor() {
+export default function Cursor({ hideCursor }) {
   const cursorSize = 20;
   const mouse = {
     x: useMotionValue(0),
@@ -42,7 +42,8 @@ export default function Cursor() {
           width: cursorSize,
           position: 'fixed',
           borderRadius: "50%",
-          pointerEvents: "none"
+          pointerEvents: "none",
+          visibility: hideCursor ? "hidden" : "visible",
         }}
         className='text-primary'
       >
