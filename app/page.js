@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <main className="lg:mx-80 lg:mt-20 mx-4 mt-14 overflow-hidden text-primary select-none">
         <div className="lg:flex lg:w-full lg:h-[21.8em]">
-          <div className="shadow-inset rounded-3xl h-[35.5em] w-full mx-1 px-7 pt-9 lg:mr-1 lg:flex lg:h-full lg:w-[31.8vw]">
+          <div className="relative shadow-inset rounded-3xl h-[35.5em] w-full mx-1 px-7 pt-9 lg:mr-1 lg:flex lg:h-full lg:w-[31.8vw] group hover:cursor-pointer">
             <div className="rounded-3xl h-[20.5em] w-auto lg:w-[16.8em] lg:mt-1 lg:h-[17em] lg:mr-7">
               <Image
                 src="https://source.unsplash.com/featured/?cat"
@@ -17,7 +17,7 @@ export default function Home() {
                 className="h-[35.5vh] w-full rounded-tl-3xl rounded-br-3xl z-0 lg:h-full"
               />
             </div>
-            <div className="rounded-3xl w-auto h-32 ">
+            <div className="rounded-3xl w-auto h-32">
               <div className="flex flex-col justify-center mt-12">
                 <div className="text-sm opacity-75">Web Developer</div>
                 <div className="text-4xl font-semibold font-sans my-1">
@@ -28,7 +28,26 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 group-hover:cursor-pointer transition-opacity duration-200">
+              <svg
+                className="h-10 w-10"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                viewBox="0 0 473.02 511.76"
+              >
+                <path
+                  fill-rule="nonzero"
+                  d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                />
+              </svg>
+            </div>
           </div>
+
           <div className="lg:flex lg:ml-5 lg:flex-col ml-3 lg:w-1/2">
             <div className="lg:h-12">
               <div className="shadow-inset rounded-3xl h-[3.5em] w-auto mt-7 mx-1 px-4 pt-4 lg:mt-0">
@@ -48,7 +67,7 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:flex lg:w-full">
-              <div className="shadow-inset rounded-3xl h-[14.5em] w-auto mt-7 mx-1 px-7 pt-9  lg:mr-3 lg:w-1/2 lg:h-[17em]">
+              <div className="relative hover:cursor-pointer shadow-inset rounded-3xl h-[14.5em] w-auto mt-7 mx-1 px-7 pt-9  lg:mr-3 lg:w-1/2 lg:h-[17em] group">
                 <div className="flex justify-center items-center my-4 lg:my-9">
                   <Image
                     src="/images/WhiteLogo.png"
@@ -66,9 +85,27 @@ export default function Home() {
                       Credentials
                     </div>
                   </div>
+                  <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 transition-opacity duration-200">
+                    <svg
+                      className="h-10 w-10"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      image-rendering="optimizeQuality"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      viewBox="0 0 473.02 511.76"
+                    >
+                      <path
+                        fill-rule="nonzero"
+                        d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
-              <div className="shadow-inset rounded-3xl h-[18.9em] w-auto mt-9 lg:mt-7 mx-1 px-7 pt-9 lg:w-1/2 lg:ml-3 lg:h-[17em]">
+              <div className="relative group cursor-pointer shadow-inset rounded-3xl h-[18.9em] w-auto mt-9 lg:mt-7 mx-1 px-7 pt-9 lg:w-1/2 lg:ml-3 lg:h-[17em]">
                 <div className="flex justify-center items-center">
                   <Clock />
                 </div>
@@ -78,12 +115,30 @@ export default function Home() {
                     <div className="text-xl mt-1 font-semibold">Projects</div>
                   </div>
                 </div>
+                <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 transition-opacity duration-200">
+                  <svg
+                    className="h-10 w-10"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 473.02 511.76"
+                  >
+                    <path
+                      fill-rule="nonzero"
+                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div className="lg:flex">
-          <div className="shadow-inset rounded-3xl h-[13.5em] w-auto mt-7 mx-1 px-7 lg:w-[31.8vw]">
+          <div className="relative hover:cursor-pointer group shadow-inset rounded-3xl h-[13.5em] w-auto mt-7 mx-1 px-7 lg:w-[31.8vw]">
             <div className="flex justify-center items-center h-2/3">
               <div class="slider overflow-hidden">
                 <div class="slide-track">
@@ -344,6 +399,24 @@ export default function Home() {
                 </div>
                 <div className="text-xl font-bold">Service Offering</div>
               </div>
+              <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 transition-opacity duration-200">
+                  <svg
+                    className="h-10 w-10"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 473.02 511.76"
+                  >
+                    <path
+                      fill-rule="nonzero"
+                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                    />
+                  </svg>
+                </div>
             </div>
           </div>
           <div className="shadow-inset rounded-3xl h-[34.3em] w-auto mt-7 mx-1 px-7 pt-9 lg:h-[13.5em] lg:w-full lg:ml-6 lg:flex">
@@ -367,7 +440,7 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:flex">
-          <div className="shadow-inset rounded-3xl h-[14.6em] w-auto mt-7 mx-1 px-7 pt-9 lg:w-[18.5em] lg:mr-3 lg:h-[16em]">
+          <div className="relative group hover:cursor-pointer shadow-inset rounded-3xl h-[14.6em] w-auto mt-7 mx-1 px-7 pt-9 lg:w-[18.5em] lg:mr-3 lg:h-[16em]">
             <div>
               <div className="flex justify-center items-center my-2">
                 <Image
@@ -383,10 +456,28 @@ export default function Home() {
                   <div className="text-xl mt-1 font-semibold">GFonts</div>
                 </div>
               </div>
+              <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 transition-opacity duration-200">
+                  <svg
+                    className="h-10 w-10"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 473.02 511.76"
+                  >
+                    <path
+                      fill-rule="nonzero"
+                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                    />
+                  </svg>
+                </div>
             </div>
           </div>
-          <div className="shadow-inset rounded-3xl h-[15.5em] w-auto mt-8 mx-1 px-7 pt-9 lg:ml-4 lg:mt-7 lg:h-[16em] lg:w-[39em]">
-            <div className="shadow-inset grow rounded-3xl h-1/2 flex justify-around lg:justify-center items-center">
+          <div className="relative group hover:cursor-pointer shadow-inset rounded-3xl h-[15.5em] w-auto mt-8 mx-1 px-7 pt-9 lg:ml-4 lg:mt-7 lg:h-[16em] lg:w-[39em]">
+            <div className="shadow-inset rounded-3xl h-1/2 flex justify-around lg:justify-center items-center">
               <a
                 className="shadow-inset btn btn-circle mx-4"
                 href="https://instagram.com"
@@ -461,26 +552,62 @@ export default function Home() {
                 <div className="opacity-75 text-sm uppercase">stay with me</div>
                 <div className="text-xl mt-1 font-semibold">Profile</div>
               </div>
+              <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 transition-opacity duration-200">
+                  <svg
+                    className="h-10 w-10"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 473.02 511.76"
+                  >
+                    <path
+                      fill-rule="nonzero"
+                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                    />
+                  </svg>
+                </div>
             </div>
           </div>
-          <div className="shadow-inset rounded-3xl h-[14.9em] w-auto mt-7 mx-1 px-7 pt-9 lg:h-[16em] lg:ml-5">
+          <div className="relative group hover:cursor-pointer shadow-inset rounded-3xl h-[14.9em] w-auto mt-7 mx-1 px-7 pt-9 lg:h-[16em] lg:ml-5">
             <div className="text-4xl flex flex-col justify-end h-full pb-5">
               <div>Let&apos;s</div>
               <div>
                 Work <p className="inline text-blue-500">Together</p>
               </div>
+              <div className="absolute right-6 bottom-6 opacity-30 group-hover:opacity-100 transition-opacity duration-200">
+                  <svg
+                    className="h-10 w-10"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision"
+                    image-rendering="optimizeQuality"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    viewBox="0 0 473.02 511.76"
+                  >
+                    <path
+                      fill-rule="nonzero"
+                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
+                    />
+                  </svg>
+                </div>
             </div>
           </div>
         </div>
-        <div className="mt-24 flex flex-col items-center h-[10em]">
-          <div className="text-4xl text-bold">Mishan Poudel</div>
-          <div className="flex mt-4 justify-evenly w-[30vh] text-sm">
+        <div className="my-24 flex flex-col items-center h-[10em]">
+          <div className="text-3xl text-bold">Mishan Poudel</div>
+          <div className="flex my-9 justify-evenly w-[30vh] text-sm">
             <Link href={"/"}>Home</Link>
             <Link href={"/about"}>About</Link>
             <Link href={"/work"}>Work</Link>
             <Link href={"/contact"}>Contact</Link>
           </div>
-          <div className="mt-7 opacity-90 text-sm">
+          <div className="opacity-90 text-sm">
             Created by <p className="inline text-blue-500">Mishan Poudel</p>
           </div>
         </div>
