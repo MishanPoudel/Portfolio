@@ -1,145 +1,93 @@
+import Link from "next/link";
 import Clock from "./components/Clock";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
-      <main className="mx-4 md:mx-8 lg:mx-64 lg:mt-10 mt-9 overflow-hidden text-primary">
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:h-[38vh] lg:w-[35.5vw] flex md:h-[42vh] sm: shadow-inset rounded-3xl mb-4 lg:mb-0 relative">
-            <Image
-              src="https://source.unsplash.com/500x600/?cat"
-              alt="Random Cat Image"
-              height={500}
-              width={600}
-              className="lg:h-[30vh] md:h-[35vh] mt-10 ml-7 rounded-tl-3xl rounded-br-3xl z-0 object-cover"
-            />
-            <div className="flex flex-col justify-center ml-7">
-              <div className="text-md opacity-75">Web Developer</div>
-              <div className="text-3xl font-bold font-sans my-2">
-                Mishan Poudel
-              </div>
-              <div className="text-md opacity-75 lg:w-[18vw] md:w-full text-pretty">
-                I am a Web Developer and I love to build websites
-              </div>
-              <div className="absolute right-10 bottom-7">
-                <svg
-                  className="h-10 w-10"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  shape-rendering="geometricPrecision"
-                  text-rendering="geometricPrecision"
-                  image-rendering="optimizeQuality"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  viewBox="0 0 473.02 511.76"
-                >
-                  <path
-                    fill-rule="nonzero"
-                    d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                  />
-                </svg>
+      <main className="lg:mx-80 lg:mt-20 mx-4 mt-14 overflow-hidden text-primary select-none">
+        <div className="lg:flex lg:w-full lg:h-[21.8em]">
+          <div className="shadow-inset rounded-3xl h-[35.5em] w-full mx-1 px-7 pt-9 lg:mr-1 lg:flex lg:h-full lg:w-[31.8vw]">
+            <div className="rounded-3xl h-[20.5em] w-auto lg:w-[16.8em] lg:mt-1 lg:h-[17em] lg:mr-7">
+              <Image
+                src="https://source.unsplash.com/featured/?cat"
+                alt="Random Cat Image"
+                height={500}
+                width={500}
+                className="h-[35.5vh] w-full rounded-tl-3xl rounded-br-3xl z-0 lg:h-full"
+              />
+            </div>
+            <div className="rounded-3xl w-auto h-32 ">
+              <div className="flex flex-col justify-center mt-12">
+                <div className="text-sm opacity-75">Web Developer</div>
+                <div className="text-4xl font-semibold font-sans my-1">
+                  Mishan Poudel
+                </div>
+                <div className="text-sm opacity-75 text-balanced mt-2 w-64">
+                  I am a Web Developer and I love to build websites
+                </div>
               </div>
             </div>
           </div>
-          <div className="flex flex-col lg:w-1/2">
-            <div className="shadow-inset flex rounded-3xl justify-end mb-4 lg:mb-2 lg:h-10 items-center px-2">
-              <div class="relative flex overflow-hidden w-full">
-                <div class="lg:py-12 md:py-3 animate-marquee whitespace-nowrap">
-                  <span class="text-sm mx-4">Latest Work and Feature</span>
-                  <span class="text-sm mx-4">Latest Work and Feature</span>
-                  <span class="text-sm mx-4">Latest Work and Feature</span>
-                </div>
+          <div className="lg:flex lg:ml-5 lg:flex-col ml-3 lg:w-1/2">
+            <div className="lg:h-12">
+              <div className="shadow-inset rounded-3xl h-[3.5em] w-auto mt-7 mx-1 px-4 pt-4 lg:mt-0">
+                <div class="relative text-md flex overflow-hidden">
+                  <div class="animate-marquee whitespace-nowrap">
+                    <span class="mx-4">Latest Work and Feature</span>
+                    <span class="mx-4">Latest Work and Feature</span>
+                    <span class="mx-4">Latest Work and Feature</span>
+                  </div>
 
-                <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
-                  <span class="text-sm mx-4">Latest Work and Feature</span>
-                  <span class="text-sm mx-4">Latest Work and Feature</span>
-                  <span class="text-sm mx-4">Latest Work and Feature</span>
+                  <div class="absolute top-0 animate-marquee2 whitespace-nowrap">
+                    <span class="mx-4">Latest Work and Feature</span>
+                    <span class="mx-4">Latest Work and Feature</span>
+                    <span class="mx-4">Latest Work and Feature</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="flex flex-col grow lg:flex-row lg:mt-2">
-              <div className="shadow-inset rounded-3xl mb-4 lg:mb-0 lg:w-1/2 :h-[40vh]">
-                <div className="flex justify-center items-center lg:h-2/3">
+            <div className="lg:flex lg:w-full">
+              <div className="shadow-inset rounded-3xl h-[14.5em] w-auto mt-7 mx-1 px-7 pt-9  lg:mr-3 lg:w-1/2 lg:h-[17em]">
+                <div className="flex justify-center items-center my-4 lg:my-9">
                   <Image
                     src="/images/WhiteLogo.png"
                     alt="logo"
-                    className="p-12 md:h-52"
                     height={150}
-                    width={350}
+                    width={150}
                   />
                 </div>
-                <div className="flex justify-between items-center md:mb-5">
-                  <div className="ml-6 mt-5">
+                <div className="flex justify-between items-center">
+                  <div className="mt-9">
                     <div className="opacity-75 text-sm uppercase">
                       more about me
                     </div>
-                    <div className="text-xl font-bold">Credentials</div>
-                  </div>
-                  <div>
-                    <div className="mr-7 mt-5">
-                      <svg
-                        className="h-10 w-10"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        shape-rendering="geometricPrecision"
-                        text-rendering="geometricPrecision"
-                        image-rendering="optimizeQuality"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        viewBox="0 0 473.02 511.76"
-                      >
-                        <path
-                          fill-rule="nonzero"
-                          d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                        />
-                      </svg>
+                    <div className="text-xl mt-1 font-semibold">
+                      Credentials
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="shadow-inset lg:w-1/2 rounded-3xl lg:mb-0">
-                <div className="flex justify-center items-center h-2/3">
-                  <div>
-                    <Clock />
-                  </div>
+              <div className="shadow-inset rounded-3xl h-[18.9em] w-auto mt-9 lg:mt-7 mx-1 px-7 pt-9 lg:w-1/2 lg:ml-3 lg:h-[17em]">
+                <div className="flex justify-center items-center">
+                  <Clock />
                 </div>
-                <div className="flex justify-between items-center md:mb-4">
-                  <div className="ml-6 lg:mt-5">
+                <div className="flex justify-between items-center">
+                  <div className="mt-12 lg:mt-5">
                     <div className="opacity-75 text-sm uppercase">showcase</div>
-                    <div className="text-xl font-bold">Projects</div>
-                  </div>
-                  <div>
-                    <div className="mr-7 mt-5">
-                      <svg
-                        className="h-10 w-10"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        shape-rendering="geometricPrecision"
-                        text-rendering="geometricPrecision"
-                        image-rendering="optimizeQuality"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        viewBox="0 0 473.02 511.76"
-                      >
-                        <path
-                          fill-rule="nonzero"
-                          d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                        />
-                      </svg>
-                    </div>
+                    <div className="text-xl mt-1 font-semibold">Projects</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row lg:mt-5">
-          <div className="lg:w-[35vw] h-52 rounded-3xl shadow-inset mb-4 lg:mb-0">
+        <div className="lg:flex">
+          <div className="shadow-inset rounded-3xl h-[13.5em] w-auto mt-7 mx-1 px-7 lg:w-[31.8vw]">
             <div className="flex justify-center items-center h-2/3">
               <div class="slider overflow-hidden">
                 <div class="slide-track">
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="none"
@@ -156,7 +104,7 @@ export default function Home() {
                       <path d="M15 12v-3"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -169,7 +117,7 @@ export default function Home() {
                       <path d="M32 32v448h448V32zm240 348c0 43.61-25.76 64.87-63.05 64.87-33.68 0-53.23-17.44-63.15-38.49l34.28-20.75c6.61 11.73 11.63 21.65 26.06 21.65 12 0 21.86-5.41 21.86-26.46V240h44zm99.35 63.87c-39.09 0-64.35-17.64-76.68-42L329 382c9 14.74 20.75 24.56 41.5 24.56 17.44 0 27.57-7.72 27.57-19.75 0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45 0-31.57 24.05-54.63 61.64-54.63 26.77 0 46 8.32 59.85 32.68L396 290c-7.22-12.93-15-18-27.06-18-12.33 0-20.15 7.82-20.15 18 0 12.63 7.82 17.74 25.86 25.56l10.52 4.51c35.79 15.34 55.94 31 55.94 66.16.01 37.9-29.76 57.64-69.76 57.64z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="40"
@@ -179,7 +127,7 @@ export default function Home() {
                       <g
                         transform="matrix(.05696 0 0 .05696 .647744 2.43826)"
                         fill="none"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                       >
                         <circle
                           r="50.167"
@@ -195,7 +143,7 @@ export default function Home() {
                       </g>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -206,11 +154,10 @@ export default function Home() {
                       width="40"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <title></title>
                       <path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -223,7 +170,7 @@ export default function Home() {
                       <path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -236,7 +183,7 @@ export default function Home() {
                       <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -249,7 +196,7 @@ export default function Home() {
                       <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -260,12 +207,11 @@ export default function Home() {
                       width="40"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <title></title>
                       <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
                     </svg>
                   </div>
                   {/* <!-- same slides doubled (duplicate) --> */}
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="none"
@@ -282,7 +228,7 @@ export default function Home() {
                       <path d="M15 12v-3"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -295,7 +241,7 @@ export default function Home() {
                       <path d="M32 32v448h448V32zm240 348c0 43.61-25.76 64.87-63.05 64.87-33.68 0-53.23-17.44-63.15-38.49l34.28-20.75c6.61 11.73 11.63 21.65 26.06 21.65 12 0 21.86-5.41 21.86-26.46V240h44zm99.35 63.87c-39.09 0-64.35-17.64-76.68-42L329 382c9 14.74 20.75 24.56 41.5 24.56 17.44 0 27.57-7.72 27.57-19.75 0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45 0-31.57 24.05-54.63 61.64-54.63 26.77 0 46 8.32 59.85 32.68L396 290c-7.22-12.93-15-18-27.06-18-12.33 0-20.15 7.82-20.15 18 0 12.63 7.82 17.74 25.86 25.56l10.52 4.51c35.79 15.34 55.94 31 55.94 66.16.01 37.9-29.76 57.64-69.76 57.64z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="40"
@@ -305,7 +251,7 @@ export default function Home() {
                       <g
                         transform="matrix(.05696 0 0 .05696 .647744 2.43826)"
                         fill="none"
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                       >
                         <circle
                           r="50.167"
@@ -321,7 +267,7 @@ export default function Home() {
                       </g>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -332,11 +278,10 @@ export default function Home() {
                       width="40"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <title></title>
                       <path d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -349,7 +294,7 @@ export default function Home() {
                       <path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -362,7 +307,7 @@ export default function Home() {
                       <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -375,7 +320,7 @@ export default function Home() {
                       <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"></path>
                     </svg>
                   </div>
-                  <div class="slide shadow-inset rounded-full">
+                  <div class="slide shadow-inset rounded-full mx-3">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -386,7 +331,6 @@ export default function Home() {
                       width="40"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <title></title>
                       <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"></path>
                     </svg>
                   </div>
@@ -394,47 +338,27 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-between items-center">
-              <div className="ml-6">
+              <div className="">
                 <div className="opacity-75 text-sm uppercase">
                   specilization
                 </div>
                 <div className="text-xl font-bold">Service Offering</div>
               </div>
-              <div>
-                <div className="mr-7 ">
-                  <svg
-                    className="h-10 w-10"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    image-rendering="optimizeQuality"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    viewBox="0 0 473.02 511.76"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                    />
-                  </svg>
-                </div>
-              </div>
             </div>
           </div>
-          <div className=" h-52 rounded-3xl shadow-inset lg:w-full">
-            <div className="flex justify-around items-center h-full px-2">
-              <div className="shadow-inset rounded-3xl h-36 w-40 flex flex-col justify-center items-center align-middle">
+          <div className="shadow-inset rounded-3xl h-[34.3em] w-auto mt-7 mx-1 px-7 pt-9 lg:h-[13.5em] lg:w-full lg:ml-6 lg:flex">
+            <div className="h-full px-2 lg:flex lg:justify-around lg:w-full">
+              <div className="shadow-inset rounded-3xl h-36 w-full flex flex-col justify-center items-center mb-6 lg:mx-4">
                 <div className="text-3xl font-bold">00</div>
                 <div className="text-sm opacity-75 mt-2">Years</div>
                 <div className="text-sm opacity-75">Experience</div>
               </div>
-              <div className="shadow-inset rounded-3xl h-36 w-40 flex flex-col justify-center items-center">
+              <div className="shadow-inset rounded-3xl h-36 w-full flex flex-col justify-center items-center mb-6 lg:mx-4">
                 <div className="text-3xl font-bold">+00</div>
                 <div className="text-sm opacity-75 mt-2">Clients</div>
                 <div className="text-sm opacity-75">Worldwide</div>
               </div>
-              <div className="shadow-inset rounded-3xl h-36 w-40 flex flex-col justify-center items-center">
+              <div className="shadow-inset rounded-3xl h-36 w-full flex flex-col justify-center items-center mb-6 lg:mx-4">
                 <div className="text-3xl font-bold">+00</div>
                 <div className="text-sm opacity-75 mt-2">Total</div>
                 <div className="text-sm opacity-75">Projects</div>
@@ -442,48 +366,29 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row h-64">
-          <div className="shadow-inset rounded-3xl mb-4 lg:mb-0 lg:w-[17vw]">
-            <div className="flex justify-center items-center h-2/3">
-              <Image
-                height={500}
-                width={500}
-                src="/images/WhiteLogo.png"
-                alt="logo"
-                className="p-12"
-              />
-            </div>
-            <div className="flex justify-between items-center mt-2 md:mb-14">
-              <div className="ml-6">
-                <div className="opacity-75 text-sm uppercase">blog</div>
-                <div className="text-xl font-bold">GFonts</div>
+        <div className="lg:flex">
+          <div className="shadow-inset rounded-3xl h-[14.6em] w-auto mt-7 mx-1 px-7 pt-9 lg:w-[18.5em] lg:mr-3 lg:h-[16em]">
+            <div>
+              <div className="flex justify-center items-center my-2">
+                <Image
+                  src="/images/WhiteLogo.png"
+                  alt="logo"
+                  height={150}
+                  width={150}
+                />
               </div>
-              <div>
-                <div className="mr-7 ">
-                  <svg
-                    className="h-10 w-10"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    image-rendering="optimizeQuality"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    viewBox="0 0 473.02 511.76"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                    />
-                  </svg>
+              <div className="flex justify-between items-center">
+                <div className="mt-12 lg:mt-[4.5em]">
+                  <div className="opacity-75 text-sm uppercase">blog</div>
+                  <div className="text-xl mt-1 font-semibold">GFonts</div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="shadow-inset grow rounded-3xl lg:w-1/4 px-3 py-5 mb-4 lg:mb-0">
-            <div className="shadow-inset grow rounded-3xl h-1/2 flex justify-center items-center">
+          <div className="shadow-inset rounded-3xl h-[15.5em] w-auto mt-8 mx-1 px-7 pt-9 lg:ml-4 lg:mt-7 lg:h-[16em] lg:w-[39em]">
+            <div className="shadow-inset grow rounded-3xl h-1/2 flex justify-around lg:justify-center items-center">
               <a
-                className="shadow-inset btn btn-circle"
+                className="shadow-inset btn btn-circle mx-4"
                 href="https://instagram.com"
                 target="_blank"
               >
@@ -500,7 +405,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                className="shadow-inset btn btn-circle"
+                className="shadow-inset btn btn-circle mx-4"
                 href="https://youtube.com"
                 target="_blank"
               >
@@ -517,7 +422,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                className="shadow-inset btn btn-circle"
+                className="shadow-inset btn btn-circle mx-4"
                 href="https://linkedin.com"
                 target="_blank"
               >
@@ -534,7 +439,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                className="shadow-inset btn btn-circle"
+                className="shadow-inset btn btn-circle mx-4"
                 href="https://github.com"
                 target="_blank"
               >
@@ -551,76 +456,33 @@ export default function Home() {
                 </svg>
               </a>
             </div>
-            <div className="flex justify-between items-center mt-8">
-              <div className="ml-6">
+            <div className="flex justify-between items-center">
+              <div className="mt-9">
                 <div className="opacity-75 text-sm uppercase">stay with me</div>
-                <div className="text-xl font-bold">Profile</div>
+                <div className="text-xl mt-1 font-semibold">Profile</div>
               </div>
+            </div>
+          </div>
+          <div className="shadow-inset rounded-3xl h-[14.9em] w-auto mt-7 mx-1 px-7 pt-9 lg:h-[16em] lg:ml-5">
+            <div className="text-4xl flex flex-col justify-end h-full pb-5">
+              <div>Let&apos;s</div>
               <div>
-                <div className="mr-7 ">
-                  <svg
-                    className="h-10 w-10"
-                    fill="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                    shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision"
-                    image-rendering="optimizeQuality"
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    viewBox="0 0 473.02 511.76"
-                  >
-                    <path
-                      fill-rule="nonzero"
-                      d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="shadow-inset rounded-3xl lg:w-[16vw] lg:mb-0">
-            <div className="flex justify-between mt-28 items-center">
-              <div className="ml-6 text-3xl flex flex-col justify-end h-full pb-5">
-                <div>Let&apos;s</div>
-                <div>Work</div>
-                <div>Together</div>
-              </div>
-              <div className="mr-7 mt-5">
-                <svg
-                  className="h-10 w-10"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                  shape-rendering="geometricPrecision"
-                  text-rendering="geometricPrecision"
-                  image-rendering="optimizeQuality"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  viewBox="0 0 473.02 511.76"
-                >
-                  <path
-                    fill-rule="nonzero"
-                    d="M295.19 225.4c1.01 7.88-4.72 15.18-12.81 16.31-8.09 1.14-15.47-4.33-16.48-12.2-1.27-9.88-6.46-16.13-13.11-19.07-8.62-3.79-19.45-2.6-27.69 1.57-9.28 4.71-16.69 13.82-17.75 26.85-.88 10.83 1.84 21.41 7.4 30.69 6.17 10.3 15.26 18.4 25.68 24.23 16.3 9.11 33.06 11.66 48.47 9.3 17.05-2.61 32.66-11.18 44.4-23.52 8.94-9.41 15.63-20.99 18.97-33.77 3.12-11.89 3.36-24.9-.13-38.25l-.52-1.96c-8.71-31.27-28.89-56.11-54.67-71.05-57.13-33.14-129.12-12.08-161.65 44.79-39.53 69.14-1.35 154.36 63.54 192.02 35.35 20.5 78.39 27.53 121 16.39l2.69-.71c87.46-24.46 138.37-115.77 115.51-203.23l-.87-3.22c-15.18-54.65-50.46-98.05-95.53-124.19l-.05.02c-70.99-41.2-158.8-35.41-224.17 12.33-20.51 14.98-38.03 33.56-51.87 54.58-53.67 81.53-45.28 179.1 11.52 255.61 18.06 24.34 40.61 45.75 66.41 62.73 56.02 36.89 127.34 52.71 201.28 32.27 7.87-2.21 15.97 2.2 18.09 9.83 2.12 7.64-2.54 15.63-10.41 17.84-83.12 22.99-163.13 5.3-225.85-36-28.5-18.76-53.47-42.48-73.52-69.5-63.99-86.22-72.58-196.42-12.24-288.07 15.73-23.88 35.73-45.06 59.25-62.23C175.01-8.92 275.64-15.75 357.05 31.5c51.24 29.79 91.35 79.02 108.58 140.92l1.01 3.69c26.89 102.9-33.66 209.84-136.33 238.55l-3.24.9c-50.64 13.24-101.71 4.92-143.58-19.37-78.63-45.62-121.35-147.6-73.94-230.51 40.72-71.2 131.29-97.47 202.76-56.01 31.99 18.56 57 49.23 67.78 87.76l.66 2.43c4.77 18.27 4.41 36.16.11 52.6-4.63 17.67-13.83 33.63-26.12 46.55-16.22 17.05-37.9 28.91-61.68 32.55-21.79 3.34-45.21-.13-67.67-12.67-14.63-8.18-27.61-20.05-36.26-34.48-8.66-14.45-12.56-30.51-11.18-47.32 1.98-24.36 16.16-41.55 33.97-50.57 16.39-8.32 36.42-9.88 53.42-2.37 15.33 6.77 27.17 20.36 29.85 41.25z"
-                  />
-                </svg>
+                Work <p className="inline text-blue-500">Together</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="sm:mt-[475px] md:sm:mt-[575px]">
-        <div className="lg:mt-24 text-3xl font-bold text-center">
-          Mishan Poudel
-        </div>
-        <div className="flex justify-center">
-          <div className="flex flex-wrap justify-evenly mb-2 my-8 w-auto">
-            <div className="mb-2 mx-4">Home</div>
-            <div className="mb-2 mx-4">About</div>
-            <div className="mb-2 mx-4">Work</div>
-            <div className="mb-2 mx-4">Contact</div>
+        <div className="mt-24 flex flex-col items-center h-[10em]">
+          <div className="text-4xl text-bold">Mishan Poudel</div>
+          <div className="flex mt-4 justify-evenly w-[30vh] text-sm">
+            <Link href={"/"}>Home</Link>
+            <Link href={"/about"}>About</Link>
+            <Link href={"/work"}>Work</Link>
+            <Link href={"/contact"}>Contact</Link>
           </div>
-        </div>
-        <div className="text-center m-5 lg:mb-32">
-          Created by <span className="text-blue-400">Mishan Poudel</span>
-        </div>
+          <div className="mt-7 opacity-90 text-sm">
+            Created by <p className="inline text-blue-500">Mishan Poudel</p>
+          </div>
         </div>
       </main>
     </>

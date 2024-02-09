@@ -4,9 +4,8 @@
 
 @layer utilities {
   .shadow-inset {
-    box-shadow: inset 5px 5px 10px -5px black,
-      inset -5px -5px 10px -11px rgb(196, 196, 196);
-    margin: 14px;
+    box-shadow: inset 5px 5px 10px -5.5px black,
+      inset -5px -5px 10px -10px rgb(144, 144, 144);
   }
 
   .slide-track {
@@ -55,5 +54,12 @@
         transform: translateX(calc(-80px * 5));
       }
     }
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-blue-500 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(59 130 246 / var(--tw-bg-opacity));
   }
 }

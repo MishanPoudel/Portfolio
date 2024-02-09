@@ -12,7 +12,7 @@ export default function Navbar() {
   const [magnetActive, setMagnetActive] = useState(false);
 
   return (
-    <nav className="sticky top-0 lg:mx-64 z-50">
+    <nav className="sticky top-0 lg:px-80 lg:my-2 z-50">
       <Cursor hideCursor={magnetActive} />
       <div className="navbar bg-base-100">
         <div className="flex-none">
