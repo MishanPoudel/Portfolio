@@ -72,7 +72,7 @@ export default function Navbar() {
         <div className="flex-1">
           <a className="btn btn-ghost text-xl">
             <Image
-              src="/images/png/WhiteLogo.png"
+              src="/images/WhiteLogo.png"
               alt="logo"
               width="120"
               height="120"
