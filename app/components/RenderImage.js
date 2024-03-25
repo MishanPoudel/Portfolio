@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 // const self1 = require("/public/self1.jpeg");
@@ -18,21 +19,21 @@ const RenderImage = () => {
         *supposed to be self pic but anime pic for now*
       </div>
       <div className="grid grid-cols-3 gap-4 py-4 select-none">
-        <img
+        <Image
           src={self2}
           width="3072"
           height="4096"
           alt="Self Photo 2"
           className="rounded-2xl"
         />
-        <img
+        <Image
           src={self1}
           width="3072"
           height="4096"
           alt="Self Photo 1"
           className="rounded-2xl"
         />
-        <img
+        <Image
           src={self3}
           width="3072"
           height="4096"
