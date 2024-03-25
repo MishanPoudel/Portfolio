@@ -40,7 +40,7 @@ const Heading = ({ heading }) => {
     }
 
     return () => clearInterval(intervalId);
-  }, [heading]);
+  }, [heading, getRandomGreeting]);
 
   function getRandomGreeting() {
     const randomIndex = Math.floor(Math.random() * greetings.length);
@@ -51,7 +51,7 @@ const Heading = ({ heading }) => {
     <main className="mb-8">
       {heading === "Mishan" && showComponent && (
         <h1 className="font-medium text-2xl text-selection">
-          {currentGreeting}, I'm {heading} 👋
+          {currentGreeting}, I&apos;m {heading} 👋
         </h1>
       )}
       {heading !== "Mishan" && (
